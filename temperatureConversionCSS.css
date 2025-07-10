@@ -8,23 +8,37 @@ body {
     align-items: center;
 }
 
-#boxConversion {
+#outerBoxContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 800px;
+    height: 400px;
+}
+
+#boxConversionContainer {
     display: flex;
     flex-direction: row;
     text-align: center;
     align-items: center;
     justify-content: center;
-    border: 1px solid gray;
-    border-radius: 5px;
-    width: 800px;
-    height: 400px;
 }
 
 #boxCelcius, #boxFahrenheit {
-    margin: 40px;
     padding: 0px;
     width: 300px;
-    height: 150px;
+}
+
+#boxCelcius {
+    margin-right: 40px;
+}
+
+#boxFahrenheit {
+    margin-left: 40px;
 }
 
 #inputCelcius {
@@ -59,7 +73,7 @@ body {
 }
 
 #equalText {
-    padding-bottom: 35px;
+    padding-bottom: 15px;
 }
 
 #inputFahrenheit {
@@ -91,4 +105,15 @@ body {
     display: flex;
     margin: 0px;
     padding-left: 103px;
+}
+
+#formulaTextContainer {
+    text-align: left;
+    margin-top: 10px;
+    margin-right: 468px;
+    padding: 0px;
+}
+
+#formulaText {
+    margin: 0px;
 }
